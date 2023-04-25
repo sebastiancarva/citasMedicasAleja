@@ -1,0 +1,10 @@
+button {    
+    color: #fff;
+    transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #000203;
+  }
+  

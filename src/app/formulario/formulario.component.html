@@ -1,0 +1,50 @@
+<div class="container shadow p-3 mb-5 rounded shadow p-3 mb-5 bg-white vh-100 ">
+    <div class="row">
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <h1>Agendar Cita</h1>
+      </div>      
+    </div>
+    <div class="row">
+      <div class="col">
+        <form>
+            <div class="form-group">
+              <label for="cedula"> Numero de Cedula</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+             </div>
+            <div class="form-group">
+              <label for="tipoCita">Tipo Cita</label>
+              <select class="form-control">
+                <option> Optamologia</option>
+                <option> Medicina General</option>
+              </select>
+            </div>
+            <div class="form-group">
+                <label for="eps"> EPS</label>
+                <select class="form-control">
+                  <option> Nueva EPS</option>
+                  <option> Sanitas </option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="fecha"> Fecha</label>             
+                    <div class="div input-group">
+                        <input matInput [matDatepicker]="picker" placeholder="dd/mm/aaaa" formControlName="fechaCita" class="form-control">
+                        <mat-datepicker #picker></mat-datepicker>
+                        <span class="input-group-text" >
+                            <button (click)="picker.open()" > <i class="bi-calendar-date" ></i> </button>
+                        </span>
+                    </div>              
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1"> EPS</label>
+                <select class="form-control">
+                  <option> Nueva EPS</option>
+                  <option> Sanitas </option>
+                </select>
+              </div>            
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+      </div>      
+    </div>
+  </div>
+
